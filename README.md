@@ -1,108 +1,74 @@
-# Sales Prediction Using Python
+# Unemployment Analysis with Python
 
-**Oasis Infobyte Internship Project** - [**Credentials**](https://drive.google.com/file/d/1uDjGZcWln07jb0dL60Yuz_33Ck78DQXF/view?usp=sharing)
+**Oasis Infobyte Internship Project** - [**Credentials**](https://drive.google.com/file/d/1uDjGZcWln07jb0dL60Yuz_33Ck78DQXF/view?usp=drive_link)
 
-![MasterHead](https://www.leadsquared.com/wp-content/uploads/2021/11/banner-4-3.png)
+![MasterHead](https://assets.sentinelassam.com/h-upload/2023/05/29/459655-bigstock-unemployment-and-work-loss-pro-437340761.webp)
 
-<font size="1">Image Courtesy: https://www.leadsquared.com/wp-content/uploads/2021/11/banner-4-3.png</font>
+<font size="1">Image Courtesy: https://assets.sentinelassam.com/h-upload/2023/05/29/459655-bigstock-unemployment-and-work-loss-pro-437340761.webp</font>
 
-Click on the following links to checkout the colab file & video presentation.
-- [Colab](https://colab.research.google.com/drive/1tAExhdHCE15A-lX0LYLsWCQT0Y0qbHZY?usp=sharing)
-- [Video](https://drive.google.com/file/d/1v1dNz0WB5ykNDCO4PsN2xP272mWv3Q25/view?usp=sharing)
+Click on the following link to checkout the colab file.
+- [Colab](https://colab.research.google.com/drive/1vbSeH3WXXvml83Gu432SWGo9cifZ7LQf?usp=sharing)
 
 
 ---
 
 ## Problem Statement
 
-The problem at hand involves predicting future sales for product and service-based businesses. With the dynamic nature of the market, businesses need to anticipate sales figures based on various factors, including advertising expenses, audience targeting, and the choice of advertising platforms.
-
-**Challenges:**
-
-1. **Variable Impact of Advertising:** Understanding how different levels of advertising expenditure influence sales is a complex challenge.
-2. **Audience Segmentation:** Identifying and analyzing the diverse audience segments to predict their impact on sales.
-3. **Platform Optimization:** Determining the optimal advertising platforms for maximizing sales outcomes.
+Unemployment, a critical economic indicator, is typically quantified using the unemployment rate, which represents the proportion of individuals without employment within the total labor force. The COVID-19 pandemic has significantly impacted the global labor market, resulting in a substantial surge in the unemployment rate. Analyzing and comprehending the dynamics of this economic metric through data science can offer valuable insights and potential solutions.
 
 **Objective:**
 
-Develop a machine learning model using Python to predict future sales. The model should provide actionable insights into the relationships between advertising investments, audience segments, and advertising platforms with sales figures.
+The primary goal of this project is to perform a comprehensive analysis of unemployment using Python. This analysis aims to shed light on the factors contributing to changes in the unemployment rate, identify patterns, and generate actionable recommendations to address unemployment challenges.
 
-**Importance:**
+**Project Details:**
 
-Accurate sales predictions empower businesses to optimize their advertising strategies, allocate resources efficiently, and adapt to changing market dynamics effectively.
+- **Unemployment Rate:** The primary focus is on understanding the unemployment rate, which serves as an essential economic indicator.
+- **COVID-19 Impact:** Given the profound effects of the COVID-19 pandemic, the analysis will pay particular attention to the pandemic's role in unemployment rate fluctuations.
+- **Data Analysis:** Python will be the primary tool for data analysis, enabling the exploration of unemployment data, the identification of correlations with other economic indicators, and the visualization of trends.
+- **Recommendations:** The project will conclude by providing actionable recommendations or insights that can guide policy-making, labor market interventions, or economic recovery strategies.
 
-**Approach:**
-
-The project will utilize Python's machine learning capabilities, employing regression analysis and predictive modeling techniques to create a robust sales prediction model.
-
-**Outcome:**
-
-The successful execution of this project will result in a reliable tool for businesses, enabling them to make informed decisions, enhance marketing strategies, and achieve better sales forecasting accuracy.
+This project holds significant importance, as addressing unemployment challenges and understanding their causes is crucial for policymakers, governments, and organizations in fostering economic recovery and ensuring the well-being of individuals within the labor force.
 
 ---
 
 ## Project Summary
 
-**Objective:**
+**Project Overview:**
 
-In this data science project, the goal is to predict future sales for product and service-based businesses. The prediction factors include advertising expenditures, audience segmentation, and advertising platforms.
+Unemployment Analysis with Python is a data science project aimed at comprehensively exploring the unemployment rate, a crucial economic metric. The project delves into the challenges posed by the COVID-19 pandemic and its significant impact on unemployment rates, offering valuable insights and recommendations.
 
-**Scope:**
+**Key Objectives:**
 
-Sales prediction is a critical tool for businesses, aiding in decision-making related to advertising costs and strategies. The project employs Python for machine learning to forecast future sales.
+- **Unemployment Rate Focus:** The primary objective is to analyze the unemployment rate as an essential economic indicator.
+- **COVID-19 Impact Assessment:** The project investigates the pandemic's role in unemployment rate fluctuations, providing a deeper understanding of the associated challenges.
+- **Data-Driven Insights:** Utilizing Python, the project conducts in-depth data analysis to uncover patterns and correlations between unemployment rates and other economic indicators.
+- **Actionable Recommendations:** The project's findings will culminate in actionable recommendations that can guide decision-makers, policy planners, and organizations in addressing unemployment issues.
 
-**Key Components:**
+**Significance:**
 
-- **Advertising Expenditure Analysis:** Explore the impact of advertising costs on sales predictions.
-- **Audience Segmentation:** Understand how different audience segments contribute to variations in sales.
-- **Platform Influence:** Investigate the role of advertising platforms in shaping sales outcomes.
+The project is of significant importance due to the pressing need to address unemployment concerns caused by the COVID-19 pandemic. The insights gained from this analysis can empower policymakers and stakeholders to make informed decisions, implement interventions, and develop strategies for economic recovery.
 
-**Implementation:**
-
-Python will be the primary tool for implementing machine learning models. Techniques such as regression analysis and predictive modeling will be employed.
-
-**Outcome:**
-
-The project aims to deliver a robust sales prediction model, enabling businesses to make data-driven decisions, optimize advertising strategies, and enhance operational efficiency.
+Unemployment Analysis with Python is an informative and actionable exploration of an economic challenge with far-reaching implications, making it a valuable contribution to data-driven decision-making.
 
 ---
 
-## Results
-
-I have selected r2 score as the primary evaluation metric for the Sales Prediction model. And after removing the overfitted models which have r2 scores for train as 100%, we get the final list:
-
-| Sl. No. | Regression Model      |   Train R2 (%) |   Test R2 (%) |
-|:--------|:--------------------------|---------------:|--------------:|
-|    1    | Linear regression       |       88.98  |      90.99 |
-|    2    | Linear regression tuned       |       88.98  |      90.99 |
-|    3    | Lasso regression               |       81.82 |      83.65 |
-|    4    | Lasso with alpha = 0.01         |       88.98 |      91.02 |
-|    5    | Ridge regression         |       88.98 |      90.93 |
-|    6    | Ridge with alpha = 1         |       88.98 |      90.93 |
-|    7    | Decision tree tuned         |       87.06 |      82.02 |
-|    8    | Random forest         |       99.70 |      97.93 |
-|    9    | Random forest tuned         |       84.24 |      84.11 |
-|    10    | Gradient Boosting Regressor         |       99.87 |      98.17 |
-|    11    | Gradient Boosting Regressor Tuned         |       99.58 |      95.11 |
-
 ## Conclusion
 
-In the dynamic landscape of product and service-based businesses, the ability to forecast sales is paramount. This project, undertaken during the data science internship at Oasis Infobyte, delved into the realm of sales prediction using machine learning with Python. Let's encapsulate the key findings:
+In this data science project, we embarked on a comprehensive analysis of the unemployment rate, a critical economic indicator, with a particular focus on the unprecedented challenges brought about by the Covid-19 pandemic. Our exploratory data analysis yielded valuable insights that shed light on the dynamics of unemployment in India.
 
-**Insights and Observations:**
+1. We observed a significant surge in the Estimated Unemployment Rate during the Covid-19 lockdown, underscoring the profound impact of the pandemic on the labor market.
 
-1. Sales exhibit a positive correlation with both TV and Radio advertising expenses, signifying the effectiveness of these channels.
-2. Notably, there's a strong correlation between TV advertising expenses and sales, emphasizing the impact of TV advertising on driving sales.
-3. The R2 score, chosen as the evaluation metric, showcased the accuracy of the model in predicting sales.
-4. The Gradient Boosting model emerged as the preferred choice, achieving an impressive 99% training accuracy and 98% testing accuracy.
+2. Our state-wise analysis highlighted the states that bore the brunt of this crisis. Puducherry and Jharkhand stood out with the highest Estimated Unemployment Rates during the lockdown, while Haryana and Tripura held the top positions before the pandemic.
 
-**Key Takeaways:**
+3. The transition from pre-lockdown to lockdown was marked by shifts in the states with the highest Estimated Unemployment Rates. Tripura, Haryana, and Himachal Pradesh led the rankings before the lockdown, whereas Puducherry, Jharkhand, and Bihar claimed the top spots during the lockdown.
 
-- Understanding the correlation between advertising expenses and sales aids in strategic decision-making.
-- The selected model demonstrates robust predictive capabilities, laying the groundwork for effective sales planning.
-- The R2 score provides a reliable indicator of the model's accuracy in forecasting sales trends.
+4. Notably, states like Uttar Pradesh, Maharashtra, and West Bengal exhibited consistent challenges in maintaining high levels of Estimated Employed Workforce both before and during the lockdown.
 
-This project not only addresses the nuances of sales prediction but also highlights the pivotal role of data science in optimizing business strategies. The findings contribute to informed decision-making, offering valuable insights for future sales initiatives.
+5. Our analysis of Estimated Labour Participation Rate identified states that showed resilience in labor force participation. Telangana, Tripura, Meghalaya, and Assam topped the list before the lockdown, while Meghalaya, Telangana, Tripura, and Andhra Pradesh excelled during the lockdown.
+
+6. We uncovered a robust negative correlation between Estimated Unemployment Rate and Estimated Employed, highlighting the intricate relationship between these two crucial employment indicators, both before and during the lockdown.
+
+This project not only provided valuable insights into the economic impact of the Covid-19 pandemic but also demonstrated the power of data science in understanding and addressing complex socio-economic challenges. The findings contribute to informed decision-making and policy formulation, and underscore the importance of data-driven approaches in mitigating the effects of future crises.
 
 ---
 
