@@ -1,104 +1,108 @@
-# Car Price Prediction with Machine Learning
+# Sales Prediction Using Python
 
-**Oasis Infobyte Internship Project** - [**Credentials**](https://drive.google.com/file/d/1uDjGZcWln07jb0dL60Yuz_33Ck78DQXF/view?usp=drive_link)
+**Oasis Infobyte Internship Project** - [**Credentials**](https://drive.google.com/file/d/1uDjGZcWln07jb0dL60Yuz_33Ck78DQXF/view?usp=sharing)
 
-![MasterHead](https://img.freepik.com/free-vector/car-showroom-center-with-autos-exhibition-inside-automobile-dealership-store-shop-interior-new-modern-vehicles-models-demonstration-sale-trading_575670-1511.jpg?w=826&t=st=1699422007~exp=1699422607~hmac=3b2f5d6b9a8a9a9d789b029b73ea0744c0dfebbf1a78a9a89b775c6167ee943e)
+![MasterHead](https://www.leadsquared.com/wp-content/uploads/2021/11/banner-4-3.png)
 
-<font size="1">Image Courtesy: https://img.freepik.com/free-vector/car-showroom-center-with-autos-exhibition-inside-automobile-dealership-store-shop-interior-new-modern-vehicles-models-demonstration-sale-trading_575670-1511.jpg?w=826&t=st=1699422007~exp=1699422607~hmac=3b2f5d6b9a8a9a9d789b029b73ea0744c0dfebbf1a78a9a89b775c6167ee943e</font>
+<font size="1">Image Courtesy: https://www.leadsquared.com/wp-content/uploads/2021/11/banner-4-3.png</font>
 
-Click on the following link to checkout the colab file.
-- [Colab](https://colab.research.google.com/drive/1n4thlpzHBQJe5JXhfyZ6SpRu20KDksWJ?usp=sharing)
+Click on the following links to checkout the colab file & video presentation.
+- [Colab](https://colab.research.google.com/drive/1tAExhdHCE15A-lX0LYLsWCQT0Y0qbHZY?usp=sharing)
+- [Video](https://drive.google.com/file/d/1v1dNz0WB5ykNDCO4PsN2xP272mWv3Q25/view?usp=sharing)
 
 
 ---
 
 ## Problem Statement
 
-**Project Overview:**
+The problem at hand involves predicting future sales for product and service-based businesses. With the dynamic nature of the market, businesses need to anticipate sales figures based on various factors, including advertising expenses, audience targeting, and the choice of advertising platforms.
 
-In the automotive industry, determining the price of a car involves various factors, such as brand reputation, car features, horsepower, and fuel efficiency. Car price prediction is a crucial application of machine learning. This project is designed to help you learn how to build a model for car price prediction.
+**Challenges:**
 
-**Key Objectives:**
+1. **Variable Impact of Advertising:** Understanding how different levels of advertising expenditure influence sales is a complex challenge.
+2. **Audience Segmentation:** Identifying and analyzing the diverse audience segments to predict their impact on sales.
+3. **Platform Optimization:** Determining the optimal advertising platforms for maximizing sales outcomes.
 
-- Explore the factors affecting car prices.
-- Create a machine learning model to predict car prices.
-- Gain valuable experience in the field of machine learning and automotive pricing.
+**Objective:**
+
+Develop a machine learning model using Python to predict future sales. The model should provide actionable insights into the relationships between advertising investments, audience segments, and advertising platforms with sales figures.
+
+**Importance:**
+
+Accurate sales predictions empower businesses to optimize their advertising strategies, allocate resources efficiently, and adapt to changing market dynamics effectively.
+
+**Approach:**
+
+The project will utilize Python's machine learning capabilities, employing regression analysis and predictive modeling techniques to create a robust sales prediction model.
+
+**Outcome:**
+
+The successful execution of this project will result in a reliable tool for businesses, enabling them to make informed decisions, enhance marketing strategies, and achieve better sales forecasting accuracy.
 
 ---
 
 ## Project Summary
 
-**Objective:** Develop a machine learning model to predict car prices based on various influencing factors.
+**Objective:**
 
-**Why Car Price Prediction?** Car prices are influenced by numerous variables, including brand reputation, features, horsepower, and fuel efficiency. Machine learning models can provide accurate price predictions.
+In this data science project, the goal is to predict future sales for product and service-based businesses. The prediction factors include advertising expenditures, audience segmentation, and advertising platforms.
 
-**Key Tasks:**
+**Scope:**
 
-1. **Data Collection:** Gather data on various car attributes and their corresponding prices.
-2. **Data Preprocessing:** Clean, transform, and prepare the data for modeling.
-3. **Feature Engineering:** Identify the most important features for price prediction.
-4. **Model Building:** Create a machine learning model capable of predicting car prices.
-5. **Model Evaluation:** Assess the model's accuracy and performance using appropriate metrics.
-6. **Deployment:** Make the trained model available for car price predictions.
+Sales prediction is a critical tool for businesses, aiding in decision-making related to advertising costs and strategies. The project employs Python for machine learning to forecast future sales.
 
-**Benefits:** By completing this project, we'll gain valuable insights into machine learning, data analysis, and the automotive industry. We'll also have a functional car price prediction model that can be useful for future car pricing decisions.
+**Key Components:**
+
+- **Advertising Expenditure Analysis:** Explore the impact of advertising costs on sales predictions.
+- **Audience Segmentation:** Understand how different audience segments contribute to variations in sales.
+- **Platform Influence:** Investigate the role of advertising platforms in shaping sales outcomes.
+
+**Implementation:**
+
+Python will be the primary tool for implementing machine learning models. Techniques such as regression analysis and predictive modeling will be employed.
+
+**Outcome:**
+
+The project aims to deliver a robust sales prediction model, enabling businesses to make data-driven decisions, optimize advertising strategies, and enhance operational efficiency.
 
 ---
 
 ## Results
 
-I have selected R2 score as the primary evaluation metric for the Car Price Prediction model. And after removing the overfitted models which have MSE, R2 score, Adjusted R2 score for train as 100% and also have negative accuracy value, we get the final list:
+I have selected r2 score as the primary evaluation metric for the Sales Prediction model. And after removing the overfitted models which have r2 scores for train as 100%, we get the final list:
 
-| Sl. No. | Regression Model      |   R2 Train (%) |   R2 Test (%) |
+| Sl. No. | Regression Model      |   Train R2 (%) |   Test R2 (%) |
 |:--------|:--------------------------|---------------:|--------------:|
-|    1    | Linear Regression         |       64.21  |      49.24 |
-|    2    | Linear Regression tuned       |       64.21  |      49.24 |
-|    3    | Lasso Regression tuned       |       63.62 |      49.57 |
-|    4    | Ridge Regression         |       64.19 |      49.36 |
-|    5    | Ridge Regression tuned        |       63.92 |      50.22 |
-|    6    | Decision Tree tuned         |       76.00 |      70.37 |
-|    7    | Random Forest         |       98.61 |      93.05 |
-|    8    | Random Forest tuned        |       77.10 |      73.71 |
-|    9    | Gradient Boosting Regressor         |       98.78 |      90.47 |
-|    10    | Gradient Boosting Regressor tuned        |       96.11 |      88.24 |
+|    1    | Linear regression       |       88.98  |      90.99 |
+|    2    | Linear regression tuned       |       88.98  |      90.99 |
+|    3    | Lasso regression               |       81.82 |      83.65 |
+|    4    | Lasso with alpha = 0.01         |       88.98 |      91.02 |
+|    5    | Ridge regression         |       88.98 |      90.93 |
+|    6    | Ridge with alpha = 1         |       88.98 |      90.93 |
+|    7    | Decision tree tuned         |       87.06 |      82.02 |
+|    8    | Random forest         |       99.70 |      97.93 |
+|    9    | Random forest tuned         |       84.24 |      84.11 |
+|    10    | Gradient Boosting Regressor         |       99.87 |      98.17 |
+|    11    | Gradient Boosting Regressor Tuned         |       99.58 |      95.11 |
 
 ## Conclusion
 
-This project explores the automotive industry's intricate dynamics, aiming to predict car prices with machine learning. By analyzing various factors such as fuel type, seller type, and transmission, we uncover valuable insights and select a robust model for accurate price prediction.
+In the dynamic landscape of product and service-based businesses, the ability to forecast sales is paramount. This project, undertaken during the data science internship at Oasis Infobyte, delved into the realm of sales prediction using machine learning with Python. Let's encapsulate the key findings:
 
-**Key Insights:**
+**Insights and Observations:**
 
-- The 'city' model is the top-selling car, followed by 'corolla altis,' 'verna,' 'fortuner,' and 'brio,' providing a snapshot of popular car models in the market.
+1. Sales exhibit a positive correlation with both TV and Radio advertising expenses, signifying the effectiveness of these channels.
+2. Notably, there's a strong correlation between TV advertising expenses and sales, emphasizing the impact of TV advertising on driving sales.
+3. The R2 score, chosen as the evaluation metric, showcased the accuracy of the model in predicting sales.
+4. The Gradient Boosting model emerged as the preferred choice, achieving an impressive 99% training accuracy and 98% testing accuracy.
 
-- The year 2015 saw the highest number of car purchases, making it the most favored year for buying cars, followed by 2016 and 2014.
+**Key Takeaways:**
 
-- 'Petrol' is the predominant fuel type for cars in the dataset, surpassing 'Diesel' and 'CNG,' indicating fuel preference among buyers.
+- Understanding the correlation between advertising expenses and sales aids in strategic decision-making.
+- The selected model demonstrates robust predictive capabilities, laying the groundwork for effective sales planning.
+- The R2 score provides a reliable indicator of the model's accuracy in forecasting sales trends.
 
-- The majority of cars are sold through dealers, underscoring the role of dealerships in the automotive market.
-
-- 'Manual' transmission cars significantly outnumber 'Automatic' transmission cars, showcasing consumer transmission preferences.
-
-- 'First Owner' cars generally command higher 'Selling_Price,' while 'Second' or 'Third Owner' cars often have lower prices.
-
-- 'Diesel' cars tend to have higher 'Selling_Price' compared to 'Petrol' or 'CNG' vehicles, emphasizing the influence of fuel type on car pricing.
-
-- 'Dealer' sellers usually ask for higher prices than 'Individual' sellers, revealing the impact of seller type on prices.
-
-- 'Automatic' transmission cars typically have higher prices than their 'Manual' counterparts, reflecting consumer preferences.
-
-- 'Owner' count plays a role in car pricing, with 'First Owner' cars being more expensive than 'Second' or 'Third Owner' cars.
-
-- The relationship between driven kilometers and 'Selling_Price' is negative, suggesting that cars with fewer kilometers tend to have higher selling prices.
-
-- Various machine learning models were assessed, with the Random Forest model being chosen for car price prediction due to its robust performance.
-
-- The project used the R2 score as the primary evaluation metric to assess model accuracy.
-
-- The Random Forest model achieved impressive accuracy with 98% training accuracy and 93% testing accuracy, making it a suitable choice for car price prediction.
-
-The insights provide a holistic understanding of the factors influencing car prices, both from exploratory data analysis and machine learning model perspectives. The Random Forest model's accuracy underscores its potential for practical applications in the automotive market.
-
-This project has not only equipped us with valuable data science skills but has also deepened our understanding of car pricing, making it a significant step in the field of data science and machine learning.
+This project not only addresses the nuances of sales prediction but also highlights the pivotal role of data science in optimizing business strategies. The findings contribute to informed decision-making, offering valuable insights for future sales initiatives.
 
 ---
 
